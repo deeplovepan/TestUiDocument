@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TestUiDocumentViewController : UIViewController
-
+{
+    UIManagedDocument *document;
+}
 @end

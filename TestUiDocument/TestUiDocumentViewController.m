@@ -7,6 +7,7 @@
 //
 
 #import "TestUiDocumentViewController.h"
+#import <CoreData/CoreData.h>
 
 @interface TestUiDocumentViewController ()
 
@@ -14,10 +15,48 @@
 
 @implementation TestUiDocumentViewController
 
+-(void)createNewObj
+{
+    NSManagedObject *newObj = [NSEntityDescription insertNewObjectForEntityForName:@"Book" inManagedObjectContext:document.managedObjectContext];
+    NSLog(@"newObj %@", newObj);
+    
+    
+    [document saveToURL:document.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:NULL];
+
+    
+}
+
+-(void)initDatabase
+{
+    NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    url = [url URLByAppendingPathComponent:@"books"];
+    document = [[UIManagedDocument alloc] initWithFileURL:url];
+
+    if([[NSFileManager defaultManager] fileExistsAtPath:[url path]])
+    {
+        [document openWithCompletionHandler:^(BOOL success) {
+            NSLog(@"open ok");
+            [self createNewObj];
+
+        }];
+    }
+    else
+    {
+        [document saveToURL:url forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success) {
+            NSLog(@"create %d", success); 
+            [self createNewObj];
+        }];
+    }
+    
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self initDatabase];
 }
 
 - (void)viewDidUnload

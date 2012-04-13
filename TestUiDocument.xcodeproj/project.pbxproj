@@ -15,6 +15,8 @@
 		A6F167CA15380C4B00DD2AB9 /* TestUiDocumentAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F167C915380C4B00DD2AB9 /* TestUiDocumentAppDelegate.m */; };
 		A6F167CD15380C4B00DD2AB9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6F167CB15380C4B00DD2AB9 /* MainStoryboard.storyboard */; };
 		A6F167D015380C4B00DD2AB9 /* TestUiDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F167CF15380C4B00DD2AB9 /* TestUiDocumentViewController.m */; };
+		A6F167D815380C6800DD2AB9 /* TestUiDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6F167D615380C6800DD2AB9 /* TestUiDocument.xcdatamodeld */; };
+		A6F167DE153811C300DD2AB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F167DD153811C300DD2AB9 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +24,17 @@
 		A6F167B915380C4B00DD2AB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A6F167BB15380C4B00DD2AB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6F167BD15380C4B00DD2AB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A6F167C115380C4B00DD2AB9 /* TestUiDocument-Info.plist */ = {isa = PBXFileReference; path = "TestUiDocument-Info.plist"; sourceTree = "<group>"; };
+		A6F167C115380C4B00DD2AB9 /* TestUiDocument-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestUiDocument-Info.plist"; sourceTree = "<group>"; };
 		A6F167C315380C4B00DD2AB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A6F167C515380C4B00DD2AB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A6F167C715380C4B00DD2AB9 /* TestUiDocument-Prefix.pch */ = {isa = PBXFileReference; path = "TestUiDocument-Prefix.pch"; sourceTree = "<group>"; };
-		A6F167C815380C4B00DD2AB9 /* TestUiDocumentAppDelegate.h */ = {isa = PBXFileReference; path = TestUiDocumentAppDelegate.h; sourceTree = "<group>"; };
+		A6F167C715380C4B00DD2AB9 /* TestUiDocument-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestUiDocument-Prefix.pch"; sourceTree = "<group>"; };
+		A6F167C815380C4B00DD2AB9 /* TestUiDocumentAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUiDocumentAppDelegate.h; sourceTree = "<group>"; };
 		A6F167C915380C4B00DD2AB9 /* TestUiDocumentAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUiDocumentAppDelegate.m; sourceTree = "<group>"; };
 		A6F167CC15380C4B00DD2AB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A6F167CE15380C4B00DD2AB9 /* TestUiDocumentViewController.h */ = {isa = PBXFileReference; path = TestUiDocumentViewController.h; sourceTree = "<group>"; };
+		A6F167CE15380C4B00DD2AB9 /* TestUiDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUiDocumentViewController.h; sourceTree = "<group>"; };
 		A6F167CF15380C4B00DD2AB9 /* TestUiDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUiDocumentViewController.m; sourceTree = "<group>"; };
+		A6F167D715380C6800DD2AB9 /* TestUiDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestUiDocument.xcdatamodel; sourceTree = "<group>"; };
+		A6F167DD153811C300DD2AB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F167DE153811C300DD2AB9 /* CoreData.framework in Frameworks */,
 				A6F167BA15380C4B00DD2AB9 /* UIKit.framework in Frameworks */,
 				A6F167BC15380C4B00DD2AB9 /* Foundation.framework in Frameworks */,
 				A6F167BE15380C4B00DD2AB9 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +55,7 @@
 		A6F167AA15380C4B00DD2AB9 = {
 			isa = PBXGroup;
 			children = (
+				A6F167DD153811C300DD2AB9 /* CoreData.framework */,
 				A6F167BF15380C4B00DD2AB9 /* TestUiDocument */,
 				A6F167B815380C4B00DD2AB9 /* Frameworks */,
 				A6F167B615380C4B00DD2AB9 /* Products */,
@@ -94,6 +100,7 @@
 				A6F167C215380C4B00DD2AB9 /* InfoPlist.strings */,
 				A6F167C515380C4B00DD2AB9 /* main.m */,
 				A6F167C715380C4B00DD2AB9 /* TestUiDocument-Prefix.pch */,
+				A6F167D615380C6800DD2AB9 /* TestUiDocument.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,6 +171,7 @@
 				A6F167C615380C4B00DD2AB9 /* main.m in Sources */,
 				A6F167CA15380C4B00DD2AB9 /* TestUiDocumentAppDelegate.m in Sources */,
 				A6F167D015380C4B00DD2AB9 /* TestUiDocumentViewController.m in Sources */,
+				A6F167D815380C6800DD2AB9 /* TestUiDocument.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +285,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6F167D615380C6800DD2AB9 /* TestUiDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6F167D715380C6800DD2AB9 /* TestUiDocument.xcdatamodel */,
+			);
+			currentVersion = A6F167D715380C6800DD2AB9 /* TestUiDocument.xcdatamodel */;
+			path = TestUiDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A6F167AC15380C4B00DD2AB9 /* Project object */;
 }
