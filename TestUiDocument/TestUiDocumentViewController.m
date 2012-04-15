@@ -15,13 +15,20 @@
 
 @implementation TestUiDocumentViewController
 
+-(void)deleteObj:(NSManagedObject*)delObj
+{
+    [document.managedObjectContext deleteObject:delObj];
+    
+    [document saveToURL:document.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:NULL];
+
+}
+
 -(void)createNewObj
 {
     NSManagedObject *newObj = [NSEntityDescription insertNewObjectForEntityForName:@"Book" inManagedObjectContext:document.managedObjectContext];
-    NSLog(@"newObj %@", newObj);
     
     
-    [document saveToURL:document.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:NULL];
+    //[document saveToURL:document.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:NULL];
 
     
 }

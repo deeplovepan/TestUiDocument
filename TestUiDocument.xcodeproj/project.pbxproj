@@ -17,6 +17,7 @@
 		A6F167D015380C4B00DD2AB9 /* TestUiDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F167CF15380C4B00DD2AB9 /* TestUiDocumentViewController.m */; };
 		A6F167D815380C6800DD2AB9 /* TestUiDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6F167D615380C6800DD2AB9 /* TestUiDocument.xcdatamodeld */; };
 		A6F167DE153811C300DD2AB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F167DD153811C300DD2AB9 /* CoreData.framework */; };
+		A6FEAE51153962E000C537B0 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FEAE50153962E000C537B0 /* Book.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		A6F167CF15380C4B00DD2AB9 /* TestUiDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUiDocumentViewController.m; sourceTree = "<group>"; };
 		A6F167D715380C6800DD2AB9 /* TestUiDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestUiDocument.xcdatamodel; sourceTree = "<group>"; };
 		A6F167DD153811C300DD2AB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A6FEAE4F153962E000C537B0 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		A6FEAE50153962E000C537B0 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				A6F167C215380C4B00DD2AB9 /* InfoPlist.strings */,
 				A6F167C515380C4B00DD2AB9 /* main.m */,
 				A6F167C715380C4B00DD2AB9 /* TestUiDocument-Prefix.pch */,
+				A6FEAE4F153962E000C537B0 /* Book.h */,
+				A6FEAE50153962E000C537B0 /* Book.m */,
 				A6F167D615380C6800DD2AB9 /* TestUiDocument.xcdatamodeld */,
 			);
 			name = "Supporting Files";
@@ -172,6 +177,7 @@
 				A6F167CA15380C4B00DD2AB9 /* TestUiDocumentAppDelegate.m in Sources */,
 				A6F167D015380C4B00DD2AB9 /* TestUiDocumentViewController.m in Sources */,
 				A6F167D815380C6800DD2AB9 /* TestUiDocument.xcdatamodeld in Sources */,
+				A6FEAE51153962E000C537B0 /* Book.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +289,7 @@
 				A6F167D515380C4B00DD2AB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
